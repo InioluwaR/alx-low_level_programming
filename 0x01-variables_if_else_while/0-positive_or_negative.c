@@ -1,10 +1,11 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+
 /**
  * main - entry point
  *
- * Return: always return 0
+ * Return:always return 0
  *
  */
 int main(void)
@@ -19,7 +20,7 @@ int main(void)
 	} else if (n == 0)
 	{
 		printf("%d is zero\n", n);
-	} else 
+	} else
 	{
 		printf("%d is positive\n", n);
 	}
