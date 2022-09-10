@@ -2,16 +2,15 @@
 /**
  * main - entry point
  *
- * Return: always return 0
+ * Return: alway returns 0
  *
  */
-
 int main(void)
 {
 	unsigned char a = '0';
 	int i;
 
-	for (i = 0; 1 < 10; i++)
+	for (i = 0; i < 10; i++)
 	{
 		putchar(a);
 		a++;
@@ -25,4 +24,3 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
-
