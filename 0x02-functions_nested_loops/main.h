@@ -1,0 +1,1 @@
+int _putchar(char);
