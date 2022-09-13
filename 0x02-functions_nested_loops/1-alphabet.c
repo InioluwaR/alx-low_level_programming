@@ -5,7 +5,7 @@
  *
  * Description: A function that prints alphabet
  *
- * Return: always 0
+ * Return: always return 0
  */
 void print_alphabet(void)
 {
