@@ -1,3 +1,7 @@
+int _putchar(int);
+/**
+ * print numbers
+ */
 /**
  * _isupper - determines uppercase or not
  * @c: character to determine
