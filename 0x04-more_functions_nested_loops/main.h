@@ -9,3 +9,14 @@ int _isupper(int c);
  * @c: character to check
  * Return: returns boolean
  */
+int _isdigit(int c);
+/**
+ * mul - multiplies stuff
+ * @a: integer to multiply
+ * @b: integer to multiply
+ * Return: gives result
+ */
+int mul(int a, int b);
+/**
+ * print_numbers - prints the numbers
+ */
