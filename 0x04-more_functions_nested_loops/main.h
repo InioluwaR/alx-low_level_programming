@@ -37,6 +37,11 @@ void more_numbers(void);
  * print_line - prints a line
  * @n: integer to print stuff
  */
+void print_diagonal(int n);
+/**
+ * print_square - prints a square
+ * @size: prints the size of whatever
+ */
 void print_square(int size);
 /**
  * print_triangle - prints triangle
