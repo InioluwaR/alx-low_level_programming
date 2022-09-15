@@ -1,6 +1,3 @@
-#ifndef MAIN_H
-#define MAIN_H
-
 /**
  * _isupper - determines uppercase or not
  * @c: character to determine
