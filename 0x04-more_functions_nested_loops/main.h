@@ -37,6 +37,11 @@ void more_numbers(void);
  * print_line - prints a line
  * @n: integer to print stuff
  */
+void print_line(int n);
+/**
+ * print_diagonal - prints diagonal
+ * @n: integer to see how many stupid lines
+ */
 void print_diagonal(int n);
 /**
  * print_square - prints a square
