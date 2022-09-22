@@ -26,9 +26,9 @@ int _indexOf(char a)
 			{
 				str[i + 1] = str[i + 1] - 32;
 			}
-			j++
+			j++;
 		}
-		i++
+		i++;
 	}
 
 	return (str);
