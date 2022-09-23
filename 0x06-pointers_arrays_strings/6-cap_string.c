@@ -1,35 +1,30 @@
 #include "main.h"
 /**
- * _indexOf - returns boolean if special  character
- * @a: character to return
- * Return: true or false
+ * cap_string - This function capitalizes all words
+ * @s: String parameter
+ * Return: returns a string
  */
 
-int _indexOf(char a)
+char *cap_string(char *s)
 {
-	int i;
-	int j;
-	char c[] = {44, 59, 46, 33, 63, 34, 40, 41, 123, 125, 32, 10, 9};
+	int count = 0, i;
+	int sep_words[] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
 
-	i = 0;
-
-	while (str[i] != '\0')
+	if (*(s + count) >= 97 && *(s + count) <= 122)
+		*(s + count) = *(s + count) - 32;
+	count++;
+	while (*(s + count) != '\0')
 	{
-		if (i == 0 && str[i] >= 'a' && str[i] <= 'z')
+		for (i = 0; i < 13; i++)
 		{
-			str[i] = str[i] - 32;
-		}
-		j = 0;
-		while (c[j] != '\0')
-		{
-			if (c[j] == str[i] && (str[i + 1] >= 'a' && str[i + 1] <= 'z'))
+			if (*(s + count) == sep_words[i])
 			{
-				str[i + 1] = str[i + 1] - 32;
+				if ((*(s + (count + 1)) >= 97) && (*(s + (count + 1)) <= 122))
+					*(s + (count + 1)) = *(s + (count + 1)) - 32;
+				break;
 			}
-			j++;
 		}
-		i++;
+		count++;
 	}
-
-	return (str);
+	return (s);
 }
