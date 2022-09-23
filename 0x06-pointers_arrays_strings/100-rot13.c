@@ -1,27 +1,27 @@
 #include "main.h"
 /**
- * rot13 - encrypts code
- * @s: string to encrypt
- * Return: char value
+ * rot13 - This func encodes using rot13
+ * @s: string parameter
+ * Return: returns a string
  */
 
 char *rot13(char *s)
 {
-	char c1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char c2[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
-	int i;
-	int j;
+	int count = 0, i;
+	char alphabet[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char rot13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
-	for (i = 0; str[i] != '\0'; i++)
+	while (*(s + count) != '\0')
 	{
-		for (j = 0; c1[j] != '\0'; j++)
+		for (i = 0; i < 52; i++)
 		{
-			if (str[i] == c1[j])
+			if (*(s + count) == alphabet[i])
 			{
-				str[i] = c2[j];
+				*(s + count) = rot13[i];
 				break;
 			}
 		}
+		count++;
 	}
 	return (s);
 }
