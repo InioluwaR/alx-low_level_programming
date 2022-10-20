@@ -1,21 +1,11 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include "lists.h"
+
+void __attribute__((constructor)) hare(void);
 /**
- * free_list - frees a list
- * @head: head var
+ * hare - prints a string before the
  */
-
-void free_list(list_t *head)
+void hare(void)
 {
-	list_t *temporary;
-
-	while (head != NULL)
-	{
-		temporary = head->next;
-		free(head->str);
-		free(head);
-		head = temporary;
-	}
+	printf("You're beat! and yet, you must allow,\n"
+			"I bore my house upon my back!\n");
 }
